@@ -14,17 +14,11 @@ nunjucks.configure('views', {
 })
 
 server.get('/', function(req, res){
-    const data ={
+    const data = {
         rocketseatImg: '/assets/melhores-tecnologias.svg',
         title: 'The best <strong id="green">technologies</strong> in <strong id="green">programming</strong>, straight to the point and in the <strong id="green">right way</strong>.',
         about: 'In the middle of so much information and the amount of tools that come up every day, you need someone to take you in the right direction.',
-        buttonText: 'I want to board in this rocket',
-        socialMedia: [
-            {name: 'facebook'},
-            {name: 'instagram'},
-            {name: 'twitter'},
-            {name: 'youtube'}
-        ]
+        buttonText: 'I want to board in this rocket'
     }
 
     return res.render('about', {data})
