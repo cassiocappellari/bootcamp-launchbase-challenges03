@@ -8,25 +8,14 @@
     
     <div class="cards-content">
         <div class="cards">
-            <div class="card" id="starter">
-                <img src="/assets/logo-starter.svg" alt="Starter">
-                <h2>Starter</h2>
-                <p>5 Modules</p>
-                <p>Free</p>
-            </div>
-                <div class="card" id="launchbase">
-                <img src="/assets/logo-launchbase.svg" alt="Launchbase">
-                <h2>LaunchBase</h2>
-                <p>16 Modules</p>
-                <p>Paid</p>
-            </div>
-                <div class="card" id="gostack">
-                <img src="/assets/logo-gostack.svg" alt="Go Stack">
-                <h2>GoStack</h2>
-                <p>15 Modules</p>
-                <p>Paid</p>
-            </div>
-        </div>
+            {%for item in items%}
+                <div class="card" id="{{item.id}}">
+                    <img src="/assets/{{item.logo}}.svg" alt="Starter">
+                    <h2>{{item.name}}</h2>
+                    <p>{{item.modules}}</p>
+                    <p>{{item.price}}</p>
+                </div>
+            {%endfor%}
     </div>
     <div class="modal-overlay">
         <div class="modal">

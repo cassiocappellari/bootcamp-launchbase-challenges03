@@ -132,6 +132,11 @@ header {
     text-align: center;
 }
 
+.error-content h2 {
+    font-size: 36px;
+    margin: 128px 0 16px 0;
+}
+
 .cards-content .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
