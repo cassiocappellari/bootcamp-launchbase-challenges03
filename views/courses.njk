@@ -5,19 +5,16 @@
 {%endblock%}
 
 {%block content%}
-    
-<div class="cards-content">
-    <div class="cards">
-        {%for item in items%}
-            <div class="card" id="{{item.id}}">
+<section class="courses">
+    <div class="courses-content">
+        <div class="courses">
+            <div class="course" id="{{item.id}}">
                 <img src="/assets/{{item.logo}}.svg" alt="Starter">
                 <h2>{{item.name}}</h2>
                 <p>{{item.modules}}</p>
                 <p>{{item.price}}</p>
             </div>
-        {%endfor%}
+        </div>
     </div>
-</div>
-    <script src="/scripts.js"></script>
-
+</section>
 {%endblock%}

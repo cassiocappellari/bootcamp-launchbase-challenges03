@@ -28,6 +28,20 @@ server.get('/content', function(req, res) {
     return res.render('content', {items: courses})
 })
 
+server.get('/courses/:id', function(req, res) {
+    const id = req.params.id
+
+    const course = courses.find(function(course){
+        return course.id == id
+    })
+
+    if (!course) {
+        return res.send('Course not founded!')
+    }
+
+    return res.render('courses', {item: course})
+})
+
 server.listen(5000, function(){
     console.log('server is ok!')
 })

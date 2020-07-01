@@ -221,56 +221,30 @@ header {
     opacity: 0.7;
 }
 
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-	visibility: hidden;
+.courses {
+    margin: 32px auto;
 }
 
-.modal {
-    background-color: white;
-    width: 90%;
-    height: 90%;
-    margin: 5vh auto;
-    position: relative;
+.courses .course {
+    text-align: center;
 }
 
-.modal iframe {
-    width: 100%;
-    height: 100%;
+.courses .course img {
+    margin-bottom: 32px;
 }
 
-.modal .modal-content {
-    width: 100%;
-    height: 100%;
+.courses .course h2 {
+    margin-bottom: 32px;
 }
 
-.modal .close-modal {
+.course#starter {
+    color: rgb(133, 89, 193);
+}
+
+.course#launchbase {
+    color: rgb(253, 149, 31);
+}
+
+.course#gostack {
     color: rgb(4, 211, 97);
-    position: absolute;
-    right: 16px;
-    top: 0px;
-    cursor: pointer;
-}
-
-.modal .full-screen {
-    color: rgb(4, 211, 97);
-    position: absolute;
-    right: 40px;
-    top: 0px;
-    cursor: pointer;
-}
-
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal.maximize {
-    width: 100%;
-    height: 100%;
-    margin: auto;
 }
