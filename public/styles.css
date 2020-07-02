@@ -230,11 +230,25 @@ header {
 }
 
 .courses .course img {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .courses .course h2 {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    font-size: 48px;
+}
+
+.courses .course h3 {
+    font-size: 36px;
+    color: white;
+    max-width: 850px;
+    margin: 16px auto;
+}
+
+.courses .course p {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .course#starter {
