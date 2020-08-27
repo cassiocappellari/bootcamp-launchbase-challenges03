@@ -16,10 +16,16 @@ body {
     color: white;
 }
 
-header {
+header,
+footer {
     padding: 30px;
     border-bottom: 1px solid #333;
     background: rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    height: 21px;
 }
 
 .menu {
@@ -120,12 +126,13 @@ header {
     height: 52vh;
 }
 
-.middle-content .content #green {
+.middle-content .content #green,
+footer #green {
     color: var(--main-color)
 }
 
 .cards-content {
-    margin-top: 40px;
+    margin: 17px 0 16px 0;
 }
 
 .error-content {
@@ -142,7 +149,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 100px;
     max-width: 900px;
-    height: 420px;
+    height: 410px;
     margin: 0 auto;
 }
 
@@ -211,10 +218,9 @@ header {
 }
 
 .cards img {
-    margin-left: 36px;
     width: 160px;
     height: 160px;
-    margin-top: 32px;
+    margin: 32px 0 0 36px;
 }
 
 .cards .card:hover {
